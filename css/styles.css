@@ -1,0 +1,144 @@
+body {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/*********** NAVIGATION STYLING ***********/
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgb(36, 61, 61);
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navbar ul li {
+    margin-right: 10px;
+}
+
+.site-logo {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*********** MAIN CONTENT STYLING ***********/
+.site-main {
+    padding: 20px;
+}
+
+.welcome {
+    background-color: rgb(39, 134, 138);
+    padding: 40px 20px;
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+}
+
+.welcome:hover {
+    -webkit-box-shadow: 0px 0px 12px 5px #24FF30;
+    box-shadow: 0px 0px 12px 5px #24FF30;
+}
+
+/*********** EVENTS STYLING ***********/
+
+/* Event class styling (this is a container for our events */
+.events {
+    margin-top: 20px;
+    padding: 40px 20px;
+    border-radius: 25px;
+}
+
+/* Individual event styling */
+.event {
+    max-width: 300px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    border: black 1px solid;
+}
+
+/* Individual event image styling */
+.event img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Event Grid Approach Styling */
+.event-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* Media queries for tablets: 768px in width and less */
+@media screen and (max-width: 768px) {
+    .event-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Media queries for cell phones: 600px in width and less */
+@media screen and (max-width: 600px) {
+    .event-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Flexbox Approach Styling */
+.events-flexbox {
+    display: flex;
+    /* This doesn't have to be defined explicitly
+    because the default flex-direction for a flexbox 
+    is already 'row' */
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: rgb(83, 161, 83);
+    padding: 20px;
+    border-radius: 25px;
+    color: white;
+}
+
+.button {
+    border-radius: 12px;
+    background-color: rgb(36, 201, 36);
+    padding: 12px;
+    border-color: rgb(36, 201, 36);
+    border-width: 6px;
+}
+
+
+.site-footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 4px 0px;
+}
